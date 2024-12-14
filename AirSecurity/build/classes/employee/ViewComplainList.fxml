@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #706f6f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee.ViewComplainListController">
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="582.0" style="-fx-background-color: lightgray;">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fullNameColumn" prefWidth="111.0" text="Full Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="118.0" text="Email" />
+            <TableColumn fx:id="complainColumn" prefWidth="275.33331298828125" text="Complain" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

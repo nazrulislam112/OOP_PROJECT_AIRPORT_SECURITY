@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #996888;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.ViewEmployeeController">
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="582.0" style="-fx-background-color: #996888;">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fullNameColumn" prefWidth="97.0" text="Full Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="107.3333740234375" text="Email" />
+            <TableColumn fx:id="mobileColumn" prefWidth="106.66668701171875" text="Mobile" />
+            <TableColumn fx:id="dobColumn" prefWidth="93.6666259765625" text="Dob" />
+            <TableColumn fx:id="addressColumn" prefWidth="101.3333740234375" text="Address" />
+            <TableColumn prefWidth="111.0" text="Doj" />
+            <TableColumn prefWidth="78.0" text="Address" />
+            <TableColumn prefWidth="78.0" text="Address" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

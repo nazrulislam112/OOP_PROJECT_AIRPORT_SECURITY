@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #706f6f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customers.ViewProfileController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="132.0" layoutX="254.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/employee.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="180.0" layoutY="167.0" text="ID: " textFill="#efeded" />
+      <Label layoutX="181.0" layoutY="199.0" text="Name:" textFill="#f4f2f2" />
+      <Label layoutX="183.0" layoutY="226.0" text="Email:" textFill="#efefef" />
+      <Label layoutX="184.0" layoutY="255.0" text="Mobile:" textFill="#f8f5f5" />
+      <Label layoutX="183.0" layoutY="282.0" text="Dob:" textFill="#f8f8f8" />
+      <Label layoutX="183.0" layoutY="308.0" text="Address:" textFill="#f8f3f3" />
+      <Label fx:id="idLabel" layoutX="266.0" layoutY="167.0" prefHeight="17.0" prefWidth="149.0" text="label" textFill="#fdf8f8" />
+      <Label fx:id="nameLabel" layoutX="266.0" layoutY="199.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#f6f4f4" />
+      <Label fx:id="emailLabel" layoutX="266.0" layoutY="226.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#fdfcfc" />
+      <Label fx:id="mobileLabel" layoutX="266.0" layoutY="255.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#f4f1f1" />
+      <Label fx:id="dobLabel" layoutX="266.0" layoutY="282.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#f8f3f3" />
+      <Label fx:id="addressLabel" layoutX="266.0" layoutY="308.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#f6f1f1" />
+   </children>
+</AnchorPane>

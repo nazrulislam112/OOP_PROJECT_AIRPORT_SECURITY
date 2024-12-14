@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #996888;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="securityofficer.ViewPassengerController">
+   <children>
+        <Label layoutX="109.0" style="-fx-font-size: 16px;" text="Airport Security System" />
+        <TextField fx:id="boardingPassIDField" layoutX="25.0" layoutY="71.0" promptText="Enter Boarding Pass ID" />
+        <Button layoutX="25.0" layoutY="33.0" onAction="#searchPassenger" text="Search Passenger" />
+        <Label fx:id="passengerDetailsLabel" layoutX="144.0" layoutY="135.0" text="Passenger details will appear here." wrapText="true" />
+        <ComboBox fx:id="clearanceStatusComboBox" layoutX="280.0" layoutY="58.0" promptText="Select Clearance Status" />
+        <Button fx:id="updateStatusButton" layoutX="363.0" layoutY="92.0" onAction="#updateClearanceStatus" text="Update Status" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #996888;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AddUserController">
+   <children>
+      <TextField fx:id="userId" layoutX="171.0" layoutY="61.0" />
+      <Label layoutX="108.0" layoutY="65.0" text="ID:" />
+      <TextField fx:id="userfullName" layoutX="170.0" layoutY="123.0" />
+      <Label layoutX="108.0" layoutY="127.0" text="Full Name:" />
+      <TextField fx:id="userName" layoutX="170.0" layoutY="184.0" />
+      <Label layoutX="108.0" layoutY="188.0" text="Username:" />
+      <TextField fx:id="userPassword" layoutX="172.0" layoutY="243.0" />
+      <Label layoutX="110.0" layoutY="247.0" text="Password:" />
+      <TextField fx:id="userMobile" layoutX="414.0" layoutY="61.0" />
+      <Label layoutX="352.0" layoutY="65.0" text="Mobile:" />
+      <Label layoutX="352.0" layoutY="127.0" text="Dob:" />
+      <TextField fx:id="userAddress" layoutX="414.0" layoutY="180.0" />
+      <Label layoutX="352.0" layoutY="184.0" text="Address:" />
+      <Label layoutX="352.0" layoutY="247.0" text="User Type:" />
+      <Button layoutX="556.0" layoutY="303.0" mnemonicParsing="false" onAction="#addUserButtonOnClick" text="Save" />
+      <Button layoutX="615.0" layoutY="303.0" mnemonicParsing="false" onAction="#cancelButtonOnClick" text="Cancel" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="414.0" layoutY="243.0" prefWidth="150.0" />
+      <DatePicker fx:id="userDob" layoutX="411.0" layoutY="123.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label fx:id="textMessageLable" layoutX="224.0" layoutY="5.0" prefHeight="19.0" prefWidth="242.0" textAlignment="CENTER" textFill="#12b75f">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="binMessageLable1" layoutX="225.0" layoutY="31.0" prefHeight="17.0" prefWidth="249.0" textAlignment="CENTER" textFill="#e90d0d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userEmail1" layoutX="172.0" layoutY="291.0" />
+      <Label layoutX="110.0" layoutY="295.0" text="Email:" />
+   </children>
+</AnchorPane>

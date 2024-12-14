@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #706f6f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customers.CustomerDashboardController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="161.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="viewProfileButton" layoutX="-1.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#viewProfileButtonOnCLick" prefHeight="25.0" prefWidth="170.0" text="View Profile" />
+            <Button fx:id="updateProfileButton" layoutX="-1.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#updateProfileButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Update Profile" />
+            <Button fx:id="payBillButton" layoutX="-1.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#payBillButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Pay Bill" />
+            <Button fx:id="makeComplainButton" layoutX="-1.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#makeComplainButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Make Complain" />
+            <Button fx:id="applyForAtmButton" layoutX="-1.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#applyForAtmButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Apply for ATM" />
+            <Button fx:id="viewMonthlyBillButton" layoutX="-1.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#viewMonthlyBilButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="View Monhly Bill" />
+            <Button fx:id="downloadMonthlyBillButton" layoutX="-1.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#downloadMonthlyBillButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Download Monthly Bill" />
+            <Button layoutX="55.0" layoutY="424.0" mnemonicParsing="false" onAction="#customerLogOut" style="-fx-background-color: blue; -fx-border-color: black;" text="LogOut" textFill="#fffdfd" />
+            <Button fx:id="dashboarButton" layoutX="-1.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#dashBoardButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Dashboard" />
+            <Label layoutX="12.0" layoutY="11.0" prefHeight="99.0" prefWidth="144.0" style="-fx-background-color: blue;" text="Label" />
+            <ImageView fitHeight="91.0" fitWidth="135.0" layoutX="16.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/employee.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <BarChart layoutX="394.0" layoutY="70.0" prefHeight="174.0" prefWidth="211.0" title="bar chart">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <PieChart layoutX="143.0" layoutY="70.0" prefHeight="117.0" prefWidth="190.0" style="-fx-border-color: black;" title="pie chart" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="baggagehandler.BaggageHandlerController">
+    <VBox spacing="10" alignment="CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10">
+        <Label text="Baggage Handler"/>
+        
+        <!-- Add Baggage Section -->
+        <TextField fx:id="baggageIdField" promptText="Baggage ID"/>
+        <TextField fx:id="passengerNameField" promptText="Passenger Name"/>
+        <TextField fx:id="weightField" promptText="Weight"/>
+        <ChoiceBox fx:id="statusChoiceBox"/>
+        <Button text="Add Baggage" onAction="#addBaggage"/>
+
+        <!-- Search Baggage Section -->
+        <TextField fx:id="searchField" promptText="Search by Baggage ID"/>
+        <Button text="Search Baggage" onAction="#searchBaggage"/>
+        <TextArea fx:id="resultArea" editable="false"/>
+    </VBox>
+</AnchorPane>

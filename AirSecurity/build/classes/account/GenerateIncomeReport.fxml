@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: #996888;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="account.GenerateIncomeReportController">
+   <children>
+      <Label layoutX="41.0" layoutY="51.0" text="Month:" />
+      <Label layoutX="290.0" layoutY="51.0" text="Year:" />
+      <Button layoutX="238.0" layoutY="90.0" mnemonicParsing="false" onAction="#generateReportButtonOnClick" text="Generate Report" />
+      <Button layoutX="591.0" layoutY="303.0" mnemonicParsing="false" onAction="#cancelButtonOnClick" text="Cancel" />
+      <ComboBox fx:id="monthComboBox" layoutX="88.0" layoutY="47.0" prefWidth="150.0" />
+      <ComboBox fx:id="yearComboBox" layoutX="350.0" layoutY="47.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

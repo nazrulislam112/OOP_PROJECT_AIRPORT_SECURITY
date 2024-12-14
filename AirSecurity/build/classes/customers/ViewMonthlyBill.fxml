@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #706f6f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customers.ViewMonthlyBillController">
+   <children>
+      <TableView fx:id="tableView" layoutX="134.0" layoutY="14.0" prefHeight="322.0" prefWidth="471.0" style="-fx-background-color: lightgray;">
+        <columns>
+          <TableColumn fx:id="monthColumn" prefWidth="150.3333740234375" text="Month" />
+          <TableColumn fx:id="yearColumn" prefWidth="108.6666259765625" text="Year" />
+            <TableColumn fx:id="billStatusColumn" prefWidth="89.6666259765625" text="Bill Status" />
+            <TableColumn fx:id="ActionColumn" prefWidth="119.3333740234375" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

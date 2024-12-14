@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="baggagehandler.ViewBaggageController">
+    <TableView fx:id="baggageTable" layoutX="17.0" layoutY="40.0" prefHeight="285.0" prefWidth="568.0">
+        <columns>
+            <TableColumn fx:id="colBaggageId" text="Baggage ID" />
+            <TableColumn fx:id="colPassengerName" prefWidth="217.0" text="Passenger Name" />
+            <TableColumn fx:id="colWeight" prefWidth="141.0" text="Weight" />
+            <TableColumn fx:id="colStatus" minWidth="3.3333740234375" prefWidth="161.0" text="Status" />
+        </columns>
+    </TableView>
+</AnchorPane>

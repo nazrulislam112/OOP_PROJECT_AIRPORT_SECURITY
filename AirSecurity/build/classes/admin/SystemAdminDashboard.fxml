@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #996888;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.SystemAdminDashboardController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="161.0" style="-fx-background-color: lightgreen;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="dashboardButton" layoutX="-2.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#adminDashboardButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Dashboard" />
+            <Button fx:id="addEmployeeButton" layoutX="-2.0" layoutY="142.0" mnemonicParsing="false" onMouseClicked="#addEmployeeButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Add Employee" />
+            <Button fx:id="viewEmployeeButton" layoutX="-2.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#viewEmployeeListButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="View Employee List" />
+            <Button fx:id="addEventButton" layoutX="-2.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#addEventButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Add Event" />
+            <Button fx:id="viewFeedbackButton" layoutX="-2.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#viewFeedbackButtonOnCLick" prefHeight="25.0" prefWidth="170.0" text="View Feedback" />
+            <Button fx:id="addGalleryButton" layoutX="-2.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#addGalleryButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Add Gallery" />
+            <Button fx:id="viewGalleyButton" layoutX="-2.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#viewGalleryButtonOnCLick" prefHeight="25.0" prefWidth="170.0" text="View Gallery" />
+            <Button fx:id="addUserButton" layoutX="-2.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#addUserButtonOnClick" prefHeight="25.0" prefWidth="170.0" text="Add User" />
+            <Button fx:id="searchUserButton" layoutX="-2.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#searchUserButtonOnCLick" prefHeight="25.0" prefWidth="170.0" text="Search User" />
+            <Button layoutX="42.0" layoutY="438.0" mnemonicParsing="false" onAction="#customerLogOut" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: green; -fx-border-color: black;" text="LogOut" textFill="#fdfcfc" />
+            <Label layoutX="37.0" layoutY="3.0" prefHeight="109.0" prefWidth="79.0" style="-fx-background-color: green;" />
+            <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="43.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/accounts.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="80.0" layoutY="50.0" prefHeight="17.0" prefWidth="37.0" text="ID:" />
+            <Label fx:id="idLabel" layoutX="188.0" layoutY="50.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label layoutX="80.0" layoutY="74.0" prefHeight="17.0" prefWidth="37.0" text="Name:" />
+            <Label fx:id="nameLabel" layoutX="188.0" layoutY="74.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label layoutX="80.0" layoutY="99.0" prefHeight="17.0" prefWidth="84.0" text="Username:" />
+            <Label fx:id="userNameLabel" layoutX="188.0" layoutY="99.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label layoutX="80.0" layoutY="127.0" prefHeight="17.0" prefWidth="37.0" text="Email:" />
+            <Label fx:id="emailLabel" layoutX="188.0" layoutY="127.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label layoutX="80.0" layoutY="152.0" prefHeight="17.0" prefWidth="61.0" text="Mobile:" />
+            <Label fx:id="mobileLabel" layoutX="188.0" layoutY="152.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label layoutX="80.0" layoutY="175.0" prefHeight="17.0" prefWidth="56.0" text="Address:" />
+            <Label fx:id="addressLabel" layoutX="188.0" layoutY="175.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label layoutX="80.0" layoutY="200.0" prefHeight="17.0" prefWidth="37.0" text="Dob:" />
+            <Label fx:id="dobLabel" layoutX="188.0" layoutY="200.0" prefHeight="17.0" prefWidth="121.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
